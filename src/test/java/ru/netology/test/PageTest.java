@@ -1,7 +1,6 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
@@ -12,7 +11,8 @@ import ru.netology.page.TourPage;
 import java.util.Locale;
 
 import static com.codeborne.selenide.Selenide.open;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PageTest {
 
@@ -62,8 +62,7 @@ public class PageTest {
     void shouldDeclineCredit() {
         var tourPage = new TourPage();
         tourPage.fillCredit(DataHelper.getDeclinedCard());
-//        tourPage.notificationErrorIsVisible();
-        tourPage.notificationOkIsVisible();
+        tourPage.notificationErrorIsVisible();
         assertEquals("DECLINED", Database.creditStatus());
     }
 
@@ -73,8 +72,7 @@ public class PageTest {
     void shouldDeclinePayment() {
         var tourPage = new TourPage();
         tourPage.fillPayment(DataHelper.getDeclinedCard());
-//        tourPage.notificationErrorIsVisible();
-        tourPage.notificationOkIsVisible();
+        tourPage.notificationErrorIsVisible();
         assertEquals("DECLINED", Database.paymentStatus());
     }
 
@@ -169,74 +167,128 @@ public class PageTest {
         tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", new Faker().name().fullName(), "00", DataHelper.getYear(1),"123"));
         assertTrue(tourPage.inputInvalidIsVisible());
     }
-//
-//    @Test
-//    @DisplayName("Expired year payment, should decline")
-//    void shouldDeclineExpiredYearCardPayment() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Expired year credit, should decline")
-//    void shouldDeclineExpiredYearCardCredit() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Zero year payment, should decline")
-//    void shouldDeclineZeroYearCardPayment() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Zero year credit, should decline")
-//    void shouldDeclineZeroYearCardCredit() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Zero CVC payment, should decline")
-//    void shouldDeclineZeroCVCCardPayment() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Zero CVC credit, should decline")
-//    void shouldDeclineZeroCVCCardCredit() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Short CVC payment, should decline")
-//    void shouldDeclineShortCVCCardPayment() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Short CVC credit, should decline")
-//    void shouldDeclineShortCVCCardCredit() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Symbol cardholder payment, should decline")
-//    void shouldDeclineSymbolCardHolderPayment() {
-//        var tourPage = new TourPage();
-//    }
-//
-//    @Test
-//    @DisplayName("Symbol cardholder credit, should decline")
-//    void shouldDeclineSymbolCardHolderCredit() {
-//        var tourPage = new TourPage();
-//    }
-//
+
+    @Test
+    @Disabled
+    @DisplayName("Expired year payment, should decline")
+    void shouldDeclineExpiredYearCardPayment() {
+        var tourPage = new TourPage();
+        tourPage.fillPayment(DataHelper.getPastYearCard());
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Expired year credit, should decline")
+    void shouldDeclineExpiredYearCardCredit() {
+        var tourPage = new TourPage();
+        tourPage.fillCredit(DataHelper.getPastYearCard());
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Future year payment, should decline")
+    void shouldDeclineFutureYearCardPayment() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(10), faker.random().nextInt(100,999).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Future year credit, should decline")
+    void shouldDeclineFutureYearCardCredit() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillCredit(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(10), faker.random().nextInt(100,999).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @DisplayName("Zero year payment, should decline")
+    void shouldDeclineZeroYearCardPayment() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), "00", faker.random().nextInt(100,999).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @DisplayName("Zero year credit, should decline")
+    void shouldDeclineZeroYearCardCredit() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillCredit(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), "00", faker.random().nextInt(100,999).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Zero CVC payment, should decline")
+    void shouldDeclineZeroCVCCardPayment() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),"00"));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Zero CVC credit, should decline")
+    void shouldDeclineZeroCVCCardCredit() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillCredit(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),"00"));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Short CVC payment, should decline")
+    void shouldDeclineShortCVCCardPayment() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(0,99).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Short CVC credit, should decline")
+    void shouldDeclineShortCVCCardCredit() {
+        var tourPage = new TourPage();
+        var faker = new Faker(new Locale("usa"));
+        tourPage.fillCredit(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(0,99).toString()));
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Symbol cardholder payment, should decline")
+    void shouldDeclineSymbolCardHolderPayment() {
+        var tourPage = new TourPage();
+        tourPage.fillPayment(DataHelper.getInvalidHolderCard());
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
+    @Test
+    @Disabled
+    @DisplayName("Symbol cardholder credit, should decline")
+    void shouldDeclineSymbolCardHolderCredit() {
+        var tourPage = new TourPage();
+        tourPage.fillCredit(DataHelper.getInvalidHolderCard());
+        assertTrue(tourPage.inputInvalidIsVisible());
+    }
+
     @Test
     @Disabled
     @DisplayName("Empty card number payment, should decline")
     void shouldDeclineEmptyCardNumberPayment() {
         var tourPage = new TourPage();
         var faker = new Faker(new Locale("usa"));
-        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", "", DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(100,999).toString()));
+        tourPage.fillPayment(DataHelper.getSpecificCard("", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(100,999).toString()));
         assertTrue(tourPage.inputInvalidIsVisible());
     }
 
@@ -246,7 +298,7 @@ public class PageTest {
     void shouldDeclineEmptyCardNumberCredit() {
         var tourPage = new TourPage();
         var faker = new Faker(new Locale("usa"));
-        tourPage.fillPayment(DataHelper.getSpecificCard("4444 4444 4444 4441", "", DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(100,999).toString()));
+        tourPage.fillPayment(DataHelper.getSpecificCard("", faker.name().fullName(), DataHelper.getMonth(1), DataHelper.getYear(1),faker.random().nextInt(100,999).toString()));
         assertTrue(tourPage.inputInvalidIsVisible());
     }
 
@@ -268,7 +320,6 @@ public class PageTest {
         var faker = new Faker(new Locale("usa"));
         tourPage.fillCredit(DataHelper.getSpecificCard("4444 4444 4444 4441", faker.name().fullName(), "", DataHelper.getYear(1),faker.random().nextInt(100,999).toString()));
         assertTrue(tourPage.inputInvalidIsVisible());
-
     }
 
     @Test

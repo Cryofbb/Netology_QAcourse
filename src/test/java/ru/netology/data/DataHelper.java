@@ -38,12 +38,7 @@ public class DataHelper {
 
     public static Card getInvalidHolderCard() {
         var faker = new Faker(new Locale("ru"));
-        return new Card("4444 4444 4444 4441", getMonth(1), getYear(1), faker.name().fullName(), faker.random().nextInt(100,999).toString());
-    }
-
-    public static Card getInvalidYearCard() {
-        var faker = new Faker(new Locale("usa"));
-        return new Card("4444 4444 4444 4441", getMonth(1), getYear(10), faker.name().fullName(), faker.random().nextInt(100,999).toString());
+        return new Card("4444 4444 4444 4441", getMonth(1), getYear(1), faker.internet().password(6,20,true,true), faker.random().nextInt(100,999).toString());
     }
 
     public static Card getPastYearCard() {
