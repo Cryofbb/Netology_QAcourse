@@ -13,11 +13,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TourPage {
-    private SelenideElement heading = $("h2").find(text("Путешествие дня"));
-    private SelenideElement buyButton = $("button").find(exactText("Купить"));
-    private SelenideElement creditButton = $("button").find(exactText("Купить в кредит"));
-    private SelenideElement buyHeader = $("h3").find(text("Оплата по карте"));
-    private SelenideElement creditHeader = $("h3").find(text("Кредит по данным карты"));
+    private SelenideElement heading = $("h2").shouldHave(exactText("Путешествие дня"));
+    private SelenideElement buyButton = $("button").shouldHave(exactText("Купить"));
+    private SelenideElement creditButton = $("button").shouldHave(exactText("Купить в кредит"));
+    private SelenideElement buyHeader = $("h3").shouldHave(exactText("Оплата по карте"));
+    private SelenideElement creditHeader = $("h3").shouldHave(exactText("Кредит по данным карты"));
     private SelenideElement cardNumberField = $(byText("Номер карты")).parent().$(".input__control");
     private SelenideElement monthField = $(byText("Месяц")).parent().$(".input__control");
     private SelenideElement yearField = $(byText("Год")).parent().$(".input__control");
