@@ -21,7 +21,7 @@ public class DataHelper {
     }
 
     public static Card getValidCard() {
-        return new Card("4444 4444 4444 4441", getYear(1), getMonth(1), new Faker(new Locale("usa")).name().fullName(), "123");
+        return new Card("4444 4444 4444 4441", getMonth(1), getYear(1), new Faker(new Locale("usa")).name().fullName(), "123");
     }
 
     public static Card getDeclinedCard() {

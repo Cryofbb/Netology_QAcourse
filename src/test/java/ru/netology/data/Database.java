@@ -22,10 +22,9 @@ public class Database {
     public static void cleanBD() {
         var connection = Database.getConnection();
         connection.createStatement().executeUpdate("SET FOREIGN_KEY_CHECKS = 0;");
-        connection.createStatement().executeUpdate("TRUNCATE cards;");
-        connection.createStatement().executeUpdate("TRUNCATE auth_codes;");
-        connection.createStatement().executeUpdate("TRUNCATE users;");
-        connection.createStatement().executeUpdate("TRUNCATE card_transactions");
+        connection.createStatement().executeUpdate("TRUNCATE credit_request_entity;");
+        connection.createStatement().executeUpdate("TRUNCATE payment_entity;");
+        connection.createStatement().executeUpdate("TRUNCATE order_entity;");
         connection.createStatement().executeUpdate("SET FOREIGN_KEY_CHECKS = 1;");
     }
 
