@@ -47,4 +47,15 @@ public class Database {
     public static String creditStatus() {
         return getData("SELECT status FROM credit_request_entity;");
     }
+
+    @SneakyThrows
+    public static String countRecords(){
+        val runner = new QueryRunner();
+        Long count;
+
+        try (val conn = Database.getConnection()) {
+            count = runner.query(conn, "SELECT COUNT(*) FROM order_entity;", new ScalarHandler<>());
+        }
+        return Long.toString(count);
+    }
 }
