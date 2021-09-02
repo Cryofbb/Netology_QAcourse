@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+    "name" : "ru.netology.test.PageTest",
+    "statistic" : {
+      "failed" : 8,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 30,
+      "unknown" : 0,
+      "total" : 38
+    }
+  } ]
+}

@@ -1,0 +1,503 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ru.netology.test.PageTest",
+    "children" : [ {
+      "name" : "Short CVC credit, should decline",
+      "uid" : "3ac7879d885d60e2",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580388015,
+        "stop" : 1630580395411,
+        "duration" : 7396
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Fake card payment, should decline",
+      "uid" : "50d498d1c8c8f66f",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580395575,
+        "stop" : 1630580406282,
+        "duration" : 10707
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NonExisting card date credit, should decline",
+      "uid" : "440dd6293f131660",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580406343,
+        "stop" : 1630580407894,
+        "duration" : 1551
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty card number payment, should decline",
+      "uid" : "3b9b6ac0d36b2737",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580407900,
+        "stop" : 1630580409286,
+        "duration" : 1386
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Symbol cardholder payment, should decline",
+      "uid" : "34c30977b694c7da",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580409290,
+        "stop" : 1630580410699,
+        "duration" : 1409
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty year payment, should decline",
+      "uid" : "cd37601bf402a9c9",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580410707,
+        "stop" : 1630580412170,
+        "duration" : 1463
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty year credit, should decline",
+      "uid" : "5e3b485f8200ca9c",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580412175,
+        "stop" : 1630580413668,
+        "duration" : 1493
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero month credit, should decline",
+      "uid" : "b7490a36ef78e5b",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580413672,
+        "stop" : 1630580415138,
+        "duration" : 1466
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired card payment, should decline",
+      "uid" : "7593262907f0daec",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580415143,
+        "stop" : 1630580416634,
+        "duration" : 1491
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty cardholder credit, should decline",
+      "uid" : "44a0b2e674711e3b",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580416637,
+        "stop" : 1630580418092,
+        "duration" : 1455
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Future year payment, should decline",
+      "uid" : "7c3d322a110c1d8f",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580418097,
+        "stop" : 1630580419560,
+        "duration" : 1463
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero month payment, should decline",
+      "uid" : "4516fe47617dba7c",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580419564,
+        "stop" : 1630580421038,
+        "duration" : 1474
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Future year credit, should decline",
+      "uid" : "36621160c88d52a4",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580421043,
+        "stop" : 1630580422535,
+        "duration" : 1492
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "APPROVED payment, should pass",
+      "uid" : "3ca5e4c6317e4379",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580422540,
+        "stop" : 1630580433379,
+        "duration" : 10839
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired month credit, should decline",
+      "uid" : "61a8dca1b5ea2517",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580433383,
+        "stop" : 1630580434911,
+        "duration" : 1528
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Short card payment, should decline",
+      "uid" : "c2881d5c345cc8ee",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580434919,
+        "stop" : 1630580436403,
+        "duration" : 1484
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired year credit, should decline",
+      "uid" : "2629fe492f9050f",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580436468,
+        "stop" : 1630580438003,
+        "duration" : 1535
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired card credit, should decline",
+      "uid" : "d29301c9369d45d4",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580438006,
+        "stop" : 1630580439492,
+        "duration" : 1486
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DECLINED payment, should decline",
+      "uid" : "cb8248a42b1d8b61",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580439496,
+        "stop" : 1630580456330,
+        "duration" : 16834
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NonExisting card date payment, should decline",
+      "uid" : "42f62ae7f69fbc57",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580456336,
+        "stop" : 1630580458213,
+        "duration" : 1877
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Short card credit, should decline",
+      "uid" : "6c0f2508614de2b4",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580458217,
+        "stop" : 1630580459756,
+        "duration" : 1539
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired month payment, should decline",
+      "uid" : "5e9f3b95b68cdeef",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580459760,
+        "stop" : 1630580461291,
+        "duration" : 1531
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty CVC payment, should decline",
+      "uid" : "697ddef02b839e73",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580461295,
+        "stop" : 1630580462760,
+        "duration" : 1465
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero year credit, should decline",
+      "uid" : "2393abe6cdedceaa",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580462763,
+        "stop" : 1630580464292,
+        "duration" : 1529
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Fake card credit, should decline",
+      "uid" : "62888f5c53f0e819",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580464296,
+        "stop" : 1630580473009,
+        "duration" : 8713
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty cardholder payment, should decline",
+      "uid" : "f5322027663a09ee",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580473013,
+        "stop" : 1630580474384,
+        "duration" : 1371
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty card number credit, should decline",
+      "uid" : "7137a28a1078ef78",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580474387,
+        "stop" : 1630580475772,
+        "duration" : 1385
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty month payment, should decline",
+      "uid" : "3cdbc41209105402",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580475775,
+        "stop" : 1630580477213,
+        "duration" : 1438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty CVC credit, should decline",
+      "uid" : "8354ec52ef23b855",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580477216,
+        "stop" : 1630580478823,
+        "duration" : 1607
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "DECLINED credit, should decline",
+      "uid" : "574c93f98d374ade",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580478828,
+        "stop" : 1630580495796,
+        "duration" : 16968
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero year payment, should decline",
+      "uid" : "d19c7dfe6c184a33",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580495800,
+        "stop" : 1630580497325,
+        "duration" : 1525
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero CVC payment, should decline",
+      "uid" : "f6ba3903bca5833c",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580497329,
+        "stop" : 1630580498832,
+        "duration" : 1503
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "APPROVED credit, should pass",
+      "uid" : "64264ec9273a6803",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580498835,
+        "stop" : 1630580506458,
+        "duration" : 7623
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Empty month credit, should decline",
+      "uid" : "6ce719012ac6e04b",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580506462,
+        "stop" : 1630580508014,
+        "duration" : 1552
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Symbol cardholder credit, should decline",
+      "uid" : "6265a21e1cbdfe9",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "failed",
+      "time" : {
+        "start" : 1630580508018,
+        "stop" : 1630580509558,
+        "duration" : 1540
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Zero CVC credit, should decline",
+      "uid" : "875cd8dce2855a8d",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580509562,
+        "stop" : 1630580511171,
+        "duration" : 1609
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Expired year payment, should decline",
+      "uid" : "fc21521d47eb6b6b",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580511175,
+        "stop" : 1630580512630,
+        "duration" : 1455
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Short CVC payment, should decline",
+      "uid" : "52a3c490054f2f7d",
+      "parentUid" : "2edab7fbaf1efdeafce77f64d4dc6095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630580512634,
+        "stop" : 1630580514194,
+        "duration" : 1560
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2edab7fbaf1efdeafce77f64d4dc6095"
+  } ]
+}

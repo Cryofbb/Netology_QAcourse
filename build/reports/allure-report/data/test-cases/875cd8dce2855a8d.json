@@ -1,0 +1,233 @@
+{
+  "uid" : "875cd8dce2855a8d",
+  "name" : "Zero CVC credit, should decline",
+  "fullName" : "ru.netology.test.PageTest.shouldDeclineZeroCVCCardCredit",
+  "historyId" : "4d085b6a259a1512ccffa314ca87fdad",
+  "time" : {
+    "start" : 1630580509562,
+    "stop" : 1630580511171,
+    "duration" : 1609
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") http://localhost:8080/",
+      "time" : {
+        "start" : 1630580509563,
+        "stop" : 1630580509616,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"h2.findBy(text 'Путешествие дня')\") should be(visible)",
+      "time" : {
+        "start" : 1630580509617,
+        "stop" : 1630580509665,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"button.findBy(text 'Купить в кредит')\") click()",
+      "time" : {
+        "start" : 1630580509675,
+        "stop" : 1630580509791,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"h3.findBy(text 'Кредит по данным карты')\") should be(visible)",
+      "time" : {
+        "start" : 1630580509791,
+        "stop" : 1630580509851,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Номер карты/By.xpath: ../.input__control\") set value(4444 4444 4444 4441)",
+      "time" : {
+        "start" : 1630580509851,
+        "stop" : 1630580510151,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Месяц/By.xpath: ../.input__control\") set value(10)",
+      "time" : {
+        "start" : 1630580510152,
+        "stop" : 1630580510320,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Год/By.xpath: ../.input__control\") set value(22)",
+      "time" : {
+        "start" : 1630580510320,
+        "stop" : 1630580510458,
+        "duration" : 138
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Владелец/By.xpath: ../.input__control\") set value(Randall Spencer V)",
+      "time" : {
+        "start" : 1630580510458,
+        "stop" : 1630580510654,
+        "duration" : 196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: CVC/CVV/By.xpath: ../.input__control\") set value(00)",
+      "time" : {
+        "start" : 1630580510655,
+        "stop" : 1630580510805,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"button.findBy(text 'Продолжить')\") click()",
+      "time" : {
+        "start" : 1630580510805,
+        "stop" : 1630580510926,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\".input__sub\") is displayed()",
+      "time" : {
+        "start" : 1630580510926,
+        "stop" : 1630580510961,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-K8JTBK1"
+  }, {
+    "name" : "thread",
+    "value" : "23572@DESKTOP-K8JTBK1.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDeclineZeroCVCCardCredit"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "875cd8dce2855a8d.json",
+  "parameterValues" : [ ]
+}

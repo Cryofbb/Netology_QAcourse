@@ -1,0 +1,233 @@
+{
+  "uid" : "cd37601bf402a9c9",
+  "name" : "Empty year payment, should decline",
+  "fullName" : "ru.netology.test.PageTest.shouldDeclineEmptyYearPayment",
+  "historyId" : "a1486f9eb0863ac8186757bcc56b1ff7",
+  "time" : {
+    "start" : 1630580410707,
+    "stop" : 1630580412170,
+    "duration" : 1463
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") http://localhost:8080/",
+      "time" : {
+        "start" : 1630580410708,
+        "stop" : 1630580410761,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"h2.findBy(text 'Путешествие дня')\") should be(visible)",
+      "time" : {
+        "start" : 1630580410761,
+        "stop" : 1630580410809,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"button.findBy(text 'Купить')\") click()",
+      "time" : {
+        "start" : 1630580410822,
+        "stop" : 1630580410920,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"h3.findBy(text 'Оплата по карте')\") should be(visible)",
+      "time" : {
+        "start" : 1630580410921,
+        "stop" : 1630580410980,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Номер карты/By.xpath: ../.input__control\") set value(4444 4444 4444 4441)",
+      "time" : {
+        "start" : 1630580410980,
+        "stop" : 1630580411164,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Месяц/By.xpath: ../.input__control\") set value(10)",
+      "time" : {
+        "start" : 1630580411164,
+        "stop" : 1630580411313,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Год/By.xpath: ../.input__control\") set value()",
+      "time" : {
+        "start" : 1630580411313,
+        "stop" : 1630580411422,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: Владелец/By.xpath: ../.input__control\") set value(Alease Abernathy)",
+      "time" : {
+        "start" : 1630580411422,
+        "stop" : 1630580411620,
+        "duration" : 198
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"by text: CVC/CVV/By.xpath: ../.input__control\") set value(404)",
+      "time" : {
+        "start" : 1630580411620,
+        "stop" : 1630580411757,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\"button.findBy(text 'Продолжить')\") click()",
+      "time" : {
+        "start" : 1630580411757,
+        "stop" : 1630580411880,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "$(\".input__sub\") is displayed()",
+      "time" : {
+        "start" : 1630580411881,
+        "stop" : 1630580411915,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-K8JTBK1"
+  }, {
+    "name" : "thread",
+    "value" : "23572@DESKTOP-K8JTBK1.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDeclineEmptyYearPayment"
+  }, {
+    "name" : "suite",
+    "value" : "ru.netology.test.PageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cd37601bf402a9c9.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,125 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <true> but was: <false>",
+      "children" : [ {
+        "name" : "NonExisting card date credit, should decline",
+        "uid" : "440dd6293f131660",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580406343,
+          "stop" : 1630580407894,
+          "duration" : 1551
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Symbol cardholder payment, should decline",
+        "uid" : "34c30977b694c7da",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580409290,
+          "stop" : 1630580410699,
+          "duration" : 1409
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Zero month credit, should decline",
+        "uid" : "b7490a36ef78e5b",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580413672,
+          "stop" : 1630580415138,
+          "duration" : 1466
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Zero month payment, should decline",
+        "uid" : "4516fe47617dba7c",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580419564,
+          "stop" : 1630580421038,
+          "duration" : 1474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NonExisting card date payment, should decline",
+        "uid" : "42f62ae7f69fbc57",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580456336,
+          "stop" : 1630580458213,
+          "duration" : 1877
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Symbol cardholder credit, should decline",
+        "uid" : "6265a21e1cbdfe9",
+        "parentUid" : "845845d2ca1b5f839f479796c2627505",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580508018,
+          "stop" : 1630580509558,
+          "duration" : 1540
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "845845d2ca1b5f839f479796c2627505"
+    }, {
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/C:/Netology/BigWork/build/reports/tests/1630580455786.0.png\r\nPage source: file:/C:/Netology/BigWork/build/reports/tests/1630580455786.0.html\r\nTimeout: 15 s.",
+      "children" : [ {
+        "name" : "DECLINED payment, should decline",
+        "uid" : "cb8248a42b1d8b61",
+        "parentUid" : "2fe24a5b3cdc2b7f5307c340a98588b7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580439496,
+          "stop" : 1630580456330,
+          "duration" : 16834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2fe24a5b3cdc2b7f5307c340a98588b7"
+    }, {
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/C:/Netology/BigWork/build/reports/tests/1630580495224.1.png\r\nPage source: file:/C:/Netology/BigWork/build/reports/tests/1630580495224.1.html\r\nTimeout: 15 s.",
+      "children" : [ {
+        "name" : "DECLINED credit, should decline",
+        "uid" : "574c93f98d374ade",
+        "parentUid" : "9a64de752be7ad6b5de92e08c90b252d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630580478828,
+          "stop" : 1630580495796,
+          "duration" : 16968
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9a64de752be7ad6b5de92e08c90b252d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,381 @@
+[ {
+  "uid" : "3ac7879d885d60e2",
+  "name" : "Short CVC credit, should decline",
+  "time" : {
+    "start" : 1630580388015,
+    "stop" : 1630580395411,
+    "duration" : 7396
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb8248a42b1d8b61",
+  "name" : "DECLINED payment, should decline",
+  "time" : {
+    "start" : 1630580439496,
+    "stop" : 1630580456330,
+    "duration" : 16834
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "62888f5c53f0e819",
+  "name" : "Fake card credit, should decline",
+  "time" : {
+    "start" : 1630580464296,
+    "stop" : 1630580473009,
+    "duration" : 8713
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36621160c88d52a4",
+  "name" : "Future year credit, should decline",
+  "time" : {
+    "start" : 1630580421043,
+    "stop" : 1630580422535,
+    "duration" : 1492
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64264ec9273a6803",
+  "name" : "APPROVED credit, should pass",
+  "time" : {
+    "start" : 1630580498835,
+    "stop" : 1630580506458,
+    "duration" : 7623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d19c7dfe6c184a33",
+  "name" : "Zero year payment, should decline",
+  "time" : {
+    "start" : 1630580495800,
+    "stop" : 1630580497325,
+    "duration" : 1525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6ba3903bca5833c",
+  "name" : "Zero CVC payment, should decline",
+  "time" : {
+    "start" : 1630580497329,
+    "stop" : 1630580498832,
+    "duration" : 1503
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42f62ae7f69fbc57",
+  "name" : "NonExisting card date payment, should decline",
+  "time" : {
+    "start" : 1630580456336,
+    "stop" : 1630580458213,
+    "duration" : 1877
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8354ec52ef23b855",
+  "name" : "Empty CVC credit, should decline",
+  "time" : {
+    "start" : 1630580477216,
+    "stop" : 1630580478823,
+    "duration" : 1607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50d498d1c8c8f66f",
+  "name" : "Fake card payment, should decline",
+  "time" : {
+    "start" : 1630580395575,
+    "stop" : 1630580406282,
+    "duration" : 10707
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ce719012ac6e04b",
+  "name" : "Empty month credit, should decline",
+  "time" : {
+    "start" : 1630580506462,
+    "stop" : 1630580508014,
+    "duration" : 1552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c3d322a110c1d8f",
+  "name" : "Future year payment, should decline",
+  "time" : {
+    "start" : 1630580418097,
+    "stop" : 1630580419560,
+    "duration" : 1463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c0f2508614de2b4",
+  "name" : "Short card credit, should decline",
+  "time" : {
+    "start" : 1630580458217,
+    "stop" : 1630580459756,
+    "duration" : 1539
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2881d5c345cc8ee",
+  "name" : "Short card payment, should decline",
+  "time" : {
+    "start" : 1630580434919,
+    "stop" : 1630580436403,
+    "duration" : 1484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34c30977b694c7da",
+  "name" : "Symbol cardholder payment, should decline",
+  "time" : {
+    "start" : 1630580409290,
+    "stop" : 1630580410699,
+    "duration" : 1409
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7137a28a1078ef78",
+  "name" : "Empty card number credit, should decline",
+  "time" : {
+    "start" : 1630580474387,
+    "stop" : 1630580475772,
+    "duration" : 1385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "440dd6293f131660",
+  "name" : "NonExisting card date credit, should decline",
+  "time" : {
+    "start" : 1630580406343,
+    "stop" : 1630580407894,
+    "duration" : 1551
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd37601bf402a9c9",
+  "name" : "Empty year payment, should decline",
+  "time" : {
+    "start" : 1630580410707,
+    "stop" : 1630580412170,
+    "duration" : 1463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc21521d47eb6b6b",
+  "name" : "Expired year payment, should decline",
+  "time" : {
+    "start" : 1630580511175,
+    "stop" : 1630580512630,
+    "duration" : 1455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7490a36ef78e5b",
+  "name" : "Zero month credit, should decline",
+  "time" : {
+    "start" : 1630580413672,
+    "stop" : 1630580415138,
+    "duration" : 1466
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6265a21e1cbdfe9",
+  "name" : "Symbol cardholder credit, should decline",
+  "time" : {
+    "start" : 1630580508018,
+    "stop" : 1630580509558,
+    "duration" : 1540
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5322027663a09ee",
+  "name" : "Empty cardholder payment, should decline",
+  "time" : {
+    "start" : 1630580473013,
+    "stop" : 1630580474384,
+    "duration" : 1371
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4516fe47617dba7c",
+  "name" : "Zero month payment, should decline",
+  "time" : {
+    "start" : 1630580419564,
+    "stop" : 1630580421038,
+    "duration" : 1474
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "61a8dca1b5ea2517",
+  "name" : "Expired month credit, should decline",
+  "time" : {
+    "start" : 1630580433383,
+    "stop" : 1630580434911,
+    "duration" : 1528
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "574c93f98d374ade",
+  "name" : "DECLINED credit, should decline",
+  "time" : {
+    "start" : 1630580478828,
+    "stop" : 1630580495796,
+    "duration" : 16968
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cdbc41209105402",
+  "name" : "Empty month payment, should decline",
+  "time" : {
+    "start" : 1630580475775,
+    "stop" : 1630580477213,
+    "duration" : 1438
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e9f3b95b68cdeef",
+  "name" : "Expired month payment, should decline",
+  "time" : {
+    "start" : 1630580459760,
+    "stop" : 1630580461291,
+    "duration" : 1531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b9b6ac0d36b2737",
+  "name" : "Empty card number payment, should decline",
+  "time" : {
+    "start" : 1630580407900,
+    "stop" : 1630580409286,
+    "duration" : 1386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7593262907f0daec",
+  "name" : "Expired card payment, should decline",
+  "time" : {
+    "start" : 1630580415143,
+    "stop" : 1630580416634,
+    "duration" : 1491
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d29301c9369d45d4",
+  "name" : "Expired card credit, should decline",
+  "time" : {
+    "start" : 1630580438006,
+    "stop" : 1630580439492,
+    "duration" : 1486
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2629fe492f9050f",
+  "name" : "Expired year credit, should decline",
+  "time" : {
+    "start" : 1630580436468,
+    "stop" : 1630580438003,
+    "duration" : 1535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "697ddef02b839e73",
+  "name" : "Empty CVC payment, should decline",
+  "time" : {
+    "start" : 1630580461295,
+    "stop" : 1630580462760,
+    "duration" : 1465
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52a3c490054f2f7d",
+  "name" : "Short CVC payment, should decline",
+  "time" : {
+    "start" : 1630580512634,
+    "stop" : 1630580514194,
+    "duration" : 1560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44a0b2e674711e3b",
+  "name" : "Empty cardholder credit, should decline",
+  "time" : {
+    "start" : 1630580416637,
+    "stop" : 1630580418092,
+    "duration" : 1455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ca5e4c6317e4379",
+  "name" : "APPROVED payment, should pass",
+  "time" : {
+    "start" : 1630580422540,
+    "stop" : 1630580433379,
+    "duration" : 10839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2393abe6cdedceaa",
+  "name" : "Zero year credit, should decline",
+  "time" : {
+    "start" : 1630580462763,
+    "stop" : 1630580464292,
+    "duration" : 1529
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "875cd8dce2855a8d",
+  "name" : "Zero CVC credit, should decline",
+  "time" : {
+    "start" : 1630580509562,
+    "stop" : 1630580511171,
+    "duration" : 1609
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e3b485f8200ca9c",
+  "name" : "Empty year credit, should decline",
+  "time" : {
+    "start" : 1630580412175,
+    "stop" : 1630580413668,
+    "duration" : 1493
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
