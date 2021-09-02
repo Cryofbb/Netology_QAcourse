@@ -46,8 +46,8 @@
    ```
    gradlew -Ddb.url=jdbc:postgresql://localhost:5432/app clean test
    ```
-* для получения отчета Allure ввести команду `gradlew allureServe`
-* после окончания тестов завершить работу приложения (Ctrl+C), остановить контейнеры командой `docker-compose down`
+* для получения отчета Allure ввести команду `gradlew allureReport`
+* после окончания тестов завершить работу приложения (Ctrl+C), удалить контейнеры командой `docker-compose down`
 
 ## Текущий статус
 - [x] Написание плана автоматизации
