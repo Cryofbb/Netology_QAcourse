@@ -35,14 +35,23 @@
     ```
     java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar ./artifacts/aqa-shop.jar
     ```
-* запуск тестов (Allure):
-  *In development....*
+* запуск тестов:
+  * MySQL
+   ```
+   gradlew -Ddb.url=jdbc:mysql://localhost:3306/app clean test
+   ```
+  * PostgreSQL
+   ```
+   gradlew -Ddb.url=jdbc:postgresql://localhost:5432/app clean test
+   ```
+* для получения отчета Allure ввести команду `gradlew allureServe`
+* после окончания тестов завершить работу приложения (Ctrl+C), остановить контейнеры командой `docker-compose down`
 
 ## Текущий статус
 - [x] Написание плана автоматизации
 - [x] Подготовка тестовой среды, Докер и БД
 - [x] Создание классов и объектов
-- [ ] Написание тестов
-- [ ] Создание Issue по итогам тестов
+- [x] Написание тестов
+- [x] Создание Issue по итогам тестов
 - [ ] Итоговый отчет
 - [ ] Попытки прикрутить CI
