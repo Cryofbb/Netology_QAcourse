@@ -9,7 +9,7 @@ branches:
 build: off
 
 install:
-  - docker-compose up
+  - docker-compose up -d
   - java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar ./artifacts/aqa-shop.jar &
 
 build_script:
