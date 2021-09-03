@@ -14,4 +14,5 @@ install:
 
 build_script:
   - chmod +x gradlew &
-  - ./gradlew -Ddb.url=jdbc:mysql://localhost:3306/app clean test -Dselenide.headless=true
+  - ./gradlew -Ddb.url=jdbc:mysql://localhost:3306/app
+  - ./gradlew clean test -Dselenide.headless=true
