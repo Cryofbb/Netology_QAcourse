@@ -40,11 +40,11 @@
 * запуск тестов:
   * MySQL
    ```
-   gradlew -Ddb.url=jdbc:mysql://localhost:3306/app -Dselenide.headless=true clean test
+   gradlew -Ddb.url=jdbc:mysql://localhost:3306/app clean test -Dselenide.headless=true
    ```
   * PostgreSQL
    ```
-   gradlew -Ddb.url=jdbc:postgresql://localhost:5432/app -Dselenide.headless=true clean test
+   gradlew -Ddb.url=jdbc:postgresql://localhost:5432/app clean test -Dselenide.headless=true
    ```
 * для получения отчета Allure ввести команду `gradlew allureReport`
 * после окончания тестов завершить работу приложения (Ctrl+C), удалить контейнеры командой `docker-compose down`
