@@ -1,7 +1,6 @@
 # Дипломный проект профессии «Тестировщик»
 [![Build status](https://ci.appveyor.com/api/projects/status/q615l08cgf9bece5?svg=true)](https://ci.appveyor.com/project/Cryofbb/netology-qacourse)
 
-Пока не работает
 ## Документы
 * [План автоматизации](https://github.com/Cryofbb/Netology_QAcourse/blob/master/artifacts/Plan.md)
 * [Отчет по итогам тестирования](https://github.com/Cryofbb/Netology_QAcourse/blob/master/artifacts/Report.md)
@@ -56,4 +55,4 @@
 - [x] Написание тестов
 - [x] Создание Issue по итогам тестов
 - [x] Итоговый отчет
-- [ ] Попытки прикрутить CI
+- [x] Попытки прикрутить CI
